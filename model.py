@@ -236,4 +236,4 @@ class MemN2N(object):
         if ckpt and ckpt.model_checkpoint_path:
             self.saver.restore(self.sess, ckpt.model_checkpoint_path)
         else:
-            raise Exception(" [!] Trest mode but no checkpoint found")
+            raise Exception(" [!] Test mode but no checkpoint found")
